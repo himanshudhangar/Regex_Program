@@ -17,5 +17,7 @@ public class RegexMain1 {
 		rm.MobileFormat();
 		System.out.println("Rule3");
 		rm.MobileFormat();
+		System.out.println("Rule4");
+		rm.MobileFormat();
 }
 }

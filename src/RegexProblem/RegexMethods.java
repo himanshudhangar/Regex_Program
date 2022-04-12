@@ -95,5 +95,17 @@ public class RegexMethods {
 		 
 }
 	 }
+		 public void Rule4() {
+			 String line="Himanshu12$";
+			   String pattern= "[A-z]{1}[a-z]+[0-9]+[$]";
+			   Pattern pat= Pattern.compile(pattern);
+			   Matcher matcher=pat.matcher(line);{
+			   if(matcher.matches()) {
+				   System.out.println("Pattern matches");
+			   }else {
+				   System.out.println("No Match");
+			   }
+}
+		 }
 }
 
