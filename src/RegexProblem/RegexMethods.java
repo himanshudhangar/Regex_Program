@@ -12,7 +12,22 @@ public class RegexMethods {
 			   }else {
 				   System.out.println("No Match");
 			   }
+			   
 		}
-
+		
+		//  Match the Mo No
+		
+		public void  MobileFormat(){
+		String line="91 8551934902";
+		   String pattern= "[0-9]{2} [89]{1}[0-9]{9}";
+		   Pattern pat= Pattern.compile(pattern);
+		   Matcher matcher=pat.matcher(line);{
+		   if(matcher.matches()) {
+			   System.out.println("Pattern matches");
+		   }else {
+			   System.out.println("No Match");
+		   } 
+}
+}
 }
 

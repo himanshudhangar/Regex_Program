@@ -5,6 +5,8 @@ public class RegexMain1 {
 		RegexMethods rm=new RegexMethods();
 		System.out.println("ValidName");
 		rm.validname();
+		System.out.println("Mobile No");
+		rm.MobileFormat();
 
 }
 }
