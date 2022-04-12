@@ -69,6 +69,7 @@ public class RegexMethods {
 					   System.out.println("No Match");
 				   }
 	   }
+		 // Rule 2 One Upper Case
 		 public void Rule2() {
 		 String line="Himanshu";
 		   String pattern= "[A-Z]{1}[a-z]+";
@@ -79,8 +80,20 @@ public class RegexMethods {
 		   }else {
 			   System.out.println("No Match");
 		   }
+}		 
 }
+		 public void Rule3() {
+			 String line="Himanshu12";
+			   String pattern= "[A-z]{1}[a-z]+[0-9]";
+			   Pattern pat= Pattern.compile(pattern);
+			   Matcher matcher=pat.matcher(line);{
+			   if(matcher.matches()) {
+				   System.out.println("Pattern matches");
+			   }else {
+				   System.out.println("No Match");
+			   }
 		 
 }
+	 }
 }
 
