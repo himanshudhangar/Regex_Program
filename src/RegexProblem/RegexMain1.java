@@ -7,6 +7,8 @@ public class RegexMain1 {
 		rm.validname();
 		System.out.println("Mobile No");
 		rm.MobileFormat();
+		System.out.println("Valid Email");
+		rm.MobileFormat();
 
 }
 }

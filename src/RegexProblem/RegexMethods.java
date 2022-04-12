@@ -29,5 +29,18 @@ public class RegexMethods {
 		   } 
 }
 }
+		// Valid Email id
+		 public void ValideEmail() {
+			 String line="himanshu12@gmail.com";
+			   String pattern= "^[a-z  0-9_\\-\\.]+[@][a-z]+[\\.][a-z]{2,3}$";
+			   Pattern pat= Pattern.compile(pattern);
+			   Matcher matcher=pat.matcher(line);
+			   if(matcher.matches()) {
+				   System.out.println("Pattern matches");
+			   }else {
+				   System.out.println("No Match");
+			   }
+   }
+		
 }
 
