@@ -56,7 +56,7 @@ public class RegexMethods {
 				   }
 
 		
-}
+}			// Rule 1 Minimum 8 character
 		 public void Rule1 (){
 				
 				String line="himanshu";
@@ -69,5 +69,18 @@ public class RegexMethods {
 					   System.out.println("No Match");
 				   }
 	   }
+		 public void Rule2() {
+		 String line="Himanshu";
+		   String pattern= "[A-Z]{1}[a-z]+";
+		   Pattern pat= Pattern.compile(pattern);
+		   Matcher matcher=pat.matcher(line);{
+		   if(matcher.matches()) {
+			   System.out.println("Pattern matches");
+		   }else {
+			   System.out.println("No Match");
+		   }
+}
+		 
+}
 }
 
