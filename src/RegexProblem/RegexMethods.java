@@ -41,6 +41,21 @@ public class RegexMethods {
 				   System.out.println("No Match");
 			   }
    }
+		 
+		 // Valid Name Last Name
+		 public void ValideLastName() {
+
+				String line="himanshu";
+			   String pattern= "[a-z]+[A-Z]";
+				   Pattern pat= Pattern.compile(pattern);
+				   Matcher matcher=pat.matcher(line);
+				   if(matcher.matches()) {
+					   System.out.println("Pattern matches");
+				   }else {
+					   System.out.println("No Match");
+				   }
+
 		
+}
 }
 
