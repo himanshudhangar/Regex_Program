@@ -57,5 +57,17 @@ public class RegexMethods {
 
 		
 }
+		 public void Rule1 (){
+				
+				String line="himanshu";
+				   String pattern= "[a-z]+";
+				   Pattern pat= Pattern.compile(pattern);
+				   Matcher matcher=pat.matcher(line);
+				   if(matcher.matches()) {
+					   System.out.println("Pattern matches");
+				   }else {
+					   System.out.println("No Match");
+				   }
+	   }
 }
 

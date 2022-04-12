@@ -11,5 +11,7 @@ public class RegexMain1 {
 		rm.MobileFormat();
 		System.out.println("Valid Last Name");
 		rm.MobileFormat();
+		System.out.println("Rule1");
+		rm.MobileFormat();
 }
 }
